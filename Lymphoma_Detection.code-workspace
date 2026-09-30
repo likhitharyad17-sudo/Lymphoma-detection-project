@@ -1,0 +1,13 @@
+{
+  "folders": [
+    {
+      "name": "Lymphoma Detection Project",
+      "path": "."
+    }
+  ],
+  "settings": {
+    "python.defaultInterpreterPath": "${workspaceFolder}/venv/Scripts/python.exe",
+    "python.testing.pytestEnabled": true,
+    "python.testing.pytestArgs": ["backend/tests"]
+  }
+}

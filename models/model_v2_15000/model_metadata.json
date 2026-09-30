@@ -1,0 +1,23 @@
+{
+  "model_version": "model_v2_15000",
+  "architecture": "AttentionResNet50_CBAM",
+  "dataset_name": "Malignant Lymphoma Classification (15,000 Subset)",
+  "dataset_size": 15000,
+  "classes": [
+    "CLL",
+    "FL",
+    "MCL"
+  ],
+  "class_to_idx": {
+    "CLL": 0,
+    "FL": 1,
+    "MCL": 2
+  },
+  "train_samples": 10500,
+  "val_samples": 2250,
+  "epochs": 15,
+  "batch_size": 32,
+  "best_val_accuracy": 100.0,
+  "random_seed": 42,
+  "training_time_seconds": 1409.95
+}

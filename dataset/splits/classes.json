@@ -1,0 +1,28 @@
+{
+  "classes": [
+    "CLL",
+    "FL",
+    "MCL"
+  ],
+  "class_to_idx": {
+    "CLL": 0,
+    "FL": 1,
+    "MCL": 2
+  },
+  "idx_to_class": {
+    "0": "CLL",
+    "1": "FL",
+    "2": "MCL"
+  },
+  "class_full_names": {
+    "CLL": "Chronic Lymphocytic Leukemia / Small Lymphocytic Lymphoma",
+    "FL": "Follicular Lymphoma",
+    "MCL": "Mantle Cell Lymphoma"
+  },
+  "total_samples": 374,
+  "splits": {
+    "train": 261,
+    "val": 56,
+    "test": 57
+  }
+}

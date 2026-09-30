@@ -1,0 +1,97 @@
+{
+  "experiment_id": "EXP_V2_15000_ATTENTION_RESNET50",
+  "timestamp": "2026-09-05",
+  "dataset_version": "15,000-Image Malignant Lymphoma Dataset",
+  "model_version": "model_v2_15000",
+  "architecture": "AttentionResNet50_CBAM (Dual GAP+GMP, CBAM Stages 3&4)",
+  "hardware": "NVIDIA GeForce RTX 4050 Laptop GPU (CUDA Mixed Precision)",
+  "train_samples": 10500,
+  "val_samples": 2250,
+  "test_samples": 2250,
+  "external_samples": 374,
+  "classes": [
+    "CLL",
+    "FL",
+    "MCL"
+  ],
+  "hyperparameters": {
+    "epochs": 15,
+    "batch_size": 32,
+    "optimizer": "AdamW",
+    "learning_rate": 0.0001,
+    "weight_decay": 0.0001,
+    "scheduler": "CosineAnnealingLR",
+    "loss_function": "CrossEntropyLoss(label_smoothing=0.05)",
+    "random_seed": 42
+  },
+  "internal_test_metrics": {
+    "accuracy": 1.0,
+    "precision_macro": 1.0,
+    "recall_macro": 1.0,
+    "f1_macro": 1.0,
+    "f1_weighted": 1.0,
+    "roc_auc_ovr": 1.0,
+    "confusion_matrix": [
+      [
+        750,
+        0,
+        0
+      ],
+      [
+        0,
+        750,
+        0
+      ],
+      [
+        0,
+        0,
+        750
+      ]
+    ],
+    "per_class_metrics": {
+      "CLL": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "support": 750
+      },
+      "FL": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "support": 750
+      },
+      "MCL": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "support": 750
+      }
+    }
+  },
+  "external_benchmark_metrics": {
+    "accuracy": 0.3422,
+    "precision_macro": 0.6178,
+    "recall_macro": 0.35,
+    "f1_macro": 0.2296,
+    "roc_auc_ovr": 0.8126,
+    "confusion_matrix": [
+      [
+        9,
+        0,
+        104
+      ],
+      [
+        0,
+        5,
+        134
+      ],
+      [
+        8,
+        0,
+        114
+      ]
+    ],
+    "support": 374
+  }
+}

@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      - LYMPHOMA_CONFIDENCE_THRESHOLD=0.80
+    volumes:
+      - ./backend/uploads:/app/backend/uploads
+      - ./lymphoma_predictions.db:/app/lymphoma_predictions.db
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
